@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -8,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1">
             <Link to="/" className="flex items-center gap-2">
-              <span className="font-bold text-primary text-xl">VisionDrill</span>
+              <span className="font-bold text-primary text-xl">Visiondrill</span>
               <span className="text-secondary font-semibold">Careers</span>
             </Link>
             <p className="mt-4 text-sm text-gray-600">
@@ -45,7 +44,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-xs text-gray-500">© {new Date().getFullYear()} VisionDrill Careers Navigator. All rights reserved.</p>
+          <p className="text-xs text-gray-500">© {new Date().getFullYear()} Visiondrill Careers Navigator. All rights reserved.</p>
           <div className="mt-4 md:mt-0 flex space-x-4">
             <Link to="#" className="text-gray-500 hover:text-primary">
               <span className="sr-only">Twitter</span>
