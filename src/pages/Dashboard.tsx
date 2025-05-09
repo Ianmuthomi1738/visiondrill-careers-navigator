@@ -52,7 +52,7 @@ const mockSkillGaps: SkillGap[] = [
       {
         id: "course1",
         title: "TypeScript Masterclass",
-        provider: "VisionDrill",
+        provider: "Visiondrill",
         duration: "4 weeks",
         level: "Intermediate",
         url: "#",
@@ -67,7 +67,7 @@ const mockSkillGaps: SkillGap[] = [
       {
         id: "course2",
         title: "Testing React Applications",
-        provider: "VisionDrill",
+        provider: "Visiondrill",
         duration: "3 weeks",
         level: "Intermediate",
         url: "#",
@@ -82,7 +82,7 @@ const mockSkillGaps: SkillGap[] = [
       {
         id: "course3",
         title: "Redux Fundamentals",
-        provider: "VisionDrill",
+        provider: "Visiondrill",
         duration: "2 weeks",
         level: "Intermediate",
         url: "#",
@@ -186,9 +186,10 @@ const Dashboard = () => {
                 ))}
               </CardContent>
               <CardFooter>
-                <Button variant="ghost" size="sm" className="w-full justify-between">
-                  View Calendar
-                  <ChevronRight size={16} />
+                <Button asChild variant="ghost" size="sm" className="w-full justify-between">
+                  <Link to="/calendar">View Calendar
+                    <ChevronRight size={16} />
+                  </Link>
                 </Button>
               </CardFooter>
             </Card>
@@ -226,7 +227,9 @@ const Dashboard = () => {
                   <p className="text-sm text-gray-500">Take assessments to identify your strengths and areas for growth.</p>
                 </CardContent>
                 <CardFooter>
-                  <Button variant="outline" size="sm" className="w-full">Start Assessment</Button>
+                  <Button asChild variant="outline" size="sm" className="w-full">
+                    <Link to="/assessment">Start Assessment</Link>
+                  </Button>
                 </CardFooter>
               </Card>
               
@@ -241,7 +244,9 @@ const Dashboard = () => {
                   <p className="text-sm text-gray-500">Practice with our AI-powered mock interviews.</p>
                 </CardContent>
                 <CardFooter>
-                  <Button variant="outline" size="sm" className="w-full">Start Practice</Button>
+                  <Button asChild variant="outline" size="sm" className="w-full">
+                    <Link to="/interviews">Start Practice</Link>
+                  </Button>
                 </CardFooter>
               </Card>
             </div>
@@ -322,7 +327,7 @@ const Dashboard = () => {
                             </p>
                           </div>
                           <Button asChild size="sm">
-                            <Link to={skill.courses[0].url}>Start</Link>
+                            <Link to={`/courses/${skill.courses[0].id}`}>Start</Link>
                           </Button>
                         </div>
                       </div>

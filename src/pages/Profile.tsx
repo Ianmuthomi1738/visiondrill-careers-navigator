@@ -15,7 +15,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Separator } from "@/components/ui/separator";
 import { CheckCircle, LinkedinIcon, Upload } from "lucide-react";
 import { toast } from "@/components/ui/use-toast";
 
@@ -69,6 +68,13 @@ const ProfilePage = () => {
     toast({
       title: "LinkedIn Import",
       description: "LinkedIn import feature would be integrated here.",
+    });
+  };
+  
+  const handleUploadResume = () => {
+    toast({
+      title: "Resume Upload",
+      description: "Resume upload functionality would be implemented here.",
     });
   };
   
@@ -248,12 +254,12 @@ const ProfilePage = () => {
             <div className="space-y-2">
               <div className="flex items-center justify-between mb-2">
                 <Label>Resume/CV</Label>
-                <Button variant="outline" size="sm">
+                <Button variant="outline" size="sm" onClick={handleUploadResume}>
                   <Upload className="mr-2 h-4 w-4" />
                   Upload
                 </Button>
               </div>
-              <div className="border border-dashed rounded-lg p-8 text-center">
+              <div className="border border-dashed rounded-lg p-8 text-center cursor-pointer" onClick={handleUploadResume}>
                 <div className="space-y-2">
                   <p className="text-sm">Drag and drop your resume/CV here or click upload</p>
                   <p className="text-xs text-gray-500">Supported formats: PDF, DOCX (Max 5MB)</p>

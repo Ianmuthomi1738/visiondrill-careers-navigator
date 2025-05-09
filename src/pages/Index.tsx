@@ -48,7 +48,7 @@ const Index = () => {
                 Unlock Your Career Potential with AI-Powered Guidance
               </h1>
               <p className="text-lg md:text-xl text-white/80 mb-8">
-                VisionDrill Careers Navigator uses advanced AI to match your skills with the perfect job, identify growth opportunities, and guide your career journey.
+                Visiondrill Careers Navigator uses advanced AI to match your skills with the perfect job, identify growth opportunities, and guide your career journey.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild className="bg-white text-primary hover:bg-white/90">
@@ -98,7 +98,7 @@ const Index = () => {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold mb-4">How VisionDrill Careers Works</h2>
+            <h2 className="text-3xl font-bold mb-4">How Visiondrill Careers Works</h2>
             <p className="text-gray-600">
               Our intelligent platform combines AI technology with personalized career development to help you find and succeed in your dream job.
             </p>
@@ -164,7 +164,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-6">Ready to Transform Your Career Journey?</h2>
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Join thousands of professionals who have accelerated their careers with VisionDrill Careers Navigator.
+            Join thousands of professionals who have accelerated their careers with Visiondrill Careers Navigator.
           </p>
           <Button size="lg" asChild className="bg-white text-primary hover:bg-white/90">
             <Link to="/profile">Get Started Now</Link>

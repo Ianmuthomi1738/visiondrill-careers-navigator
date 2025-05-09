@@ -22,7 +22,13 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/jobs" element={<Jobs />} />
+          <Route path="/jobs/:id" element={<Jobs />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/learning" element={<Dashboard />} /> {/* Placeholder route */}
+          <Route path="/assessment" element={<Dashboard />} /> {/* Placeholder route */}
+          <Route path="/interviews" element={<Dashboard />} /> {/* Placeholder route */}
+          <Route path="/courses/:id" element={<Dashboard />} /> {/* Placeholder route */}
+          <Route path="/calendar" element={<Dashboard />} /> {/* Placeholder route */}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
